@@ -589,3 +589,82 @@ a-list
 ;; be better expressed as the following:
 
 (into [] (range 10))
+
+;; More functions
+;; ===============
+
+;; Functions are the essence of any significant ClojureScript program, so
+;; we will dive into features that are unique to ClojureScript functions that
+;; might be unfamiliar.
+
+;; Here is a simple function tha takes two arguments adds them.
+
+(defn foo1 [a b]
+  (+ a b))
+
+(foo1 1 2)
+;; Functions can have multiple arities.
+
+(defn foo2
+  ([a b] (+ a b))
+  ([a b c] (* a b c)))
+
+(foo2 3 4)
+(foo2 3 4 5)
+
+;; Multiple arities can be used to supply default values.
+
+(defn defaults
+  ([x] (defaults x :default))
+  ([x y] [x y]))
+
+(defaults :explicit)
+(defaults :explicit1 :explicit2)
+
+;; Funcitons support rest arguments.
+
+(defn foo3 [a b & d]
+  [a b d])
+
+(foo3 1 2)
+(foo3 1 2 3 4)
+
+;; You can apply functions.
+
+(apply + [1 2 3 4 5])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
