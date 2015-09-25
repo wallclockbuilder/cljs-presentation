@@ -7,8 +7,8 @@
 ;; -==-=-=-=--=-=-=-=-=-=--=-=-==-=-=--==--=-=-=-=-=-=-=-==-
 
 ;; To begin, open the command pane (type Control-SPACE), Add Connection, select
-;; Light Table UI. Once connected you can evaluate tall the forms in this file
-;; by placeing the cursor after the form and typing Command-ENTER.
+;; Light Table UI. Once connected you can evaluate all the forms in this file
+;; by placing the cursor after the form and typing Command-ENTER.
 
 ;; IMPORTANT: You must evaluate the very first form, the namespace definition.
 
