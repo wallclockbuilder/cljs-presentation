@@ -13,7 +13,7 @@
 ;; now.
 
 ;; The second way is by preceding a form with `#_`. This causes ClojureScript
-;; to skip the evaluation of onlyh the form immediately following, without
+;; to skip the evaluation of only the form immediately following, without
 ;; affecting the evaluation of the surrounding forms.
 
 ;; Try to reveal the secret message below
