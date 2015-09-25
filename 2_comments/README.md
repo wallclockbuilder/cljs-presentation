@@ -3,7 +3,7 @@ Basic ClojureScript via a hands-on approach
 
 # [Comments](https://github.com/wallclockbuilder/cljs-presentation/blob/master/2_comments/2_comments.cljs)
 
-;; There are three ways to create commnts in ClojureScript. The first way is by preceding a line with a semi-colon, just like you are reading now.
+;; There are three ways to create comments in ClojureScript. The first way is by preceding a line with a semi-colon, just like you are reading now.
 
 The second way is by preceding a form with `#_`. This causes ClojureScript to skip the evaluation of only the form immediately following, without affecting the evaluation of the surrounding forms.
 
