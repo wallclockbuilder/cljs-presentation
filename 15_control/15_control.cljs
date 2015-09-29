@@ -66,7 +66,7 @@
   "Yuck."
   "False is the other false-y value.")
 
-;; `undefined` is not really a valid ClojureScript value and is general coerced to `nil`.
+;; `undefined` is not really a valid ClojureScript value and is generally coerced to `nil`.
 
 
 
