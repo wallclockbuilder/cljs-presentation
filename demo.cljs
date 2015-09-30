@@ -597,7 +597,7 @@ a-list
 ;; we will dive into features that are unique to ClojureScript functions that
 ;; might be unfamiliar.
 
-;; Here is a simple function tha takes two arguments adds them.
+;; Here is a simple function that takes two arguments adds them.
 
 (defn foo1 [a b]
   (+ a b))
