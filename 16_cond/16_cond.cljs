@@ -9,9 +9,10 @@
 ;; cond
 ;; --=-
 
-;; Nesting `if` tends to be noisy and hard to read so ClojureScript provides a `cond` macro to deal with this.
+;; Nesting `if` tends to be noisy and hard to read so ClojureScript
+;; provides a `cond` macro to deal with this.
 
 (cond
- nil "Not goint to return this"
+ nil "Not going to return this"
  false "Nope not going to return this either"
  :else "Default case")
