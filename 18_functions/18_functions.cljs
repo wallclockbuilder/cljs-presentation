@@ -9,7 +9,9 @@
 ;; More Functions
 ;; -=-=-=-=-=-==
 
-;; Functions are the essence of any significant ClojureScript program, so we will dive into features that are unique to ClojureScript functionis that might be unfamiliar.
+;; Functions are the essence of any significant ClojureScript program, so
+;; we will dive into features that are unique to ClojureScript functionis that
+;; might be unfamiliar.
 
 ;; Here is a simple function that takes two arguments and adds them.
 
