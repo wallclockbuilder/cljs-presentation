@@ -14,11 +14,11 @@
 ;; Like `let`, you may have  a sequence of forms for the body. In tail
 ;; positions, you may write a `recur` statement that will set the bindings for
 ;; the next iteration of the `loop`. Using `loop`/`recur` is uaually considered bad
-;; style if a reasonalbe funcitonal solution via `map`/`filter`/`reduce` or a list
+;; style if a reasonable functional solution via `map`/`filter`/`reduce` or a list
 ;; comprehension is possible.
 
 
-;; While you might write this is JavaScript:
+;; While you might write this in JavaScript:
 ;;
 ;; var ret = [];
 ;; for(var i = 0; i < 10; i++) ret.push(i)
