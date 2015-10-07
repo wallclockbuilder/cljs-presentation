@@ -9,7 +9,9 @@
 ;; Closures
 ;; -===-=-=
 
-;; Could a language with such a name miss closures? Surely it can't. You may be already familiar with them in JavaScript, even if its a variable scoped language.
+;; Could a language with such a name miss closures? Surely it can't. You
+;; may be already familiar with them in JavaScript, even if its a
+;; variable scoped language.
 
 (let [a 1e3]
   (defn foo []
@@ -18,8 +20,11 @@
     (+ (foo) a)))
 
 
-;; Above we defined `foo` and `bar` functions inside the scope of a `let` form adn they both know about `a` (i.e. they close over `a`)
-;; Note, even if defined inside a `let`, `foo` and `bar` are available in the outer scope. This is because all `def` expressions are always top level. See the foonote at teh end of this sections.
+;; Above we defined `foo` and `bar` functions inside the scope of a
+;; `let` form adn they both know about `a` (i.e. they close over `a`)
+;; Note, even if defined inside a `let`, `foo` and `bar` are available
+;; in the outer scope. This is because all `def` expressions are always
+;; top level. See the foonote at the end of this sections.
 
 
 ;; And nobody else.
@@ -36,7 +41,8 @@
 ;; They encapsulate the information as well.
 
 
-;; But in ClojureScript, functions' parameters and let bindings' locals are not mutable. That goes for loop locals, too!
+;; But in ClojureScript, functions' parameters and let bindings' locals
+;; are not mutable. That goes for loop locals, too!
 
 
 
@@ -47,17 +53,20 @@
   (map #(%) fns))
 
 
-;; In JavaScript you would see a list of ten 9s. In ClojureScript we see the expected numbers from 0 to 9.
+;; In JavaScript you would see a list of ten 9s. In ClojureScript we
+;; see the expected numbers from 0 to 9.
 
 ;; FOOTNOTE:
 ;;
-;; `def` expressions (including `defn`) are always top level. People familiar with Scheme or other Lisps often mistakenly write the following in Clojure:
+;; `def` expressions (including `defn`) are always top level. People familiar
+;; with Scheme or other Lisps often mistakenly write the following in Clojure:
 
 (defn not-scheme []
   (defn no-no-no []))
 
 
-;; This is almost always incorrect. If you need to write a local function just do it with a let binding.
+;; This is almost always incorrect. If you need to write a local function just
+;; do it with a let binding.
 
 
 (defn outer-fn []
